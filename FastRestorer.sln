@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastRestorer", "FastRestorer.csproj", "{908A0C7D-741C-40A7-BE66-98F17FF07A03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{908A0C7D-741C-40A7-BE66-98F17FF07A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908A0C7D-741C-40A7-BE66-98F17FF07A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908A0C7D-741C-40A7-BE66-98F17FF07A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908A0C7D-741C-40A7-BE66-98F17FF07A03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB6AB57F-4255-4335-B895-018368B5C1DA}
+	EndGlobalSection
+EndGlobal
