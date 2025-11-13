@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FastRestorer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="350" FontSize="14" WindowStartupLocation="CenterScreen">
+        Title="Fast Restorer" Height="300" Width="350" FontSize="14" WindowStartupLocation="CenterScreen">
 
     <Grid Margin="10">
         <Grid IsEnabled="False" Opacity="0.5">
@@ -15,9 +15,9 @@
             </Grid.RowDefinitions>
 
             <DataGrid
-                    x:Name="dgBackups"
-                    Grid.Row="0"
-                    IsEnabled="False">
+                x:Name="dgBackups"
+                Grid.Row="0"
+                IsEnabled="False">
 
                 <DataGrid.Columns>
                     <DataGridTextColumn
