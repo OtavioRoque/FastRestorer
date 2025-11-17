@@ -21,15 +21,15 @@
 
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                        Header="Banco"
+                        Header="Database"
                         Width="2*"/>
 
                     <DataGridTextColumn
-                        Header="Tamanho"
+                        Header="Size MB"
                         Width="*"/>
 
                     <DataGridTextColumn
-                        Header="Data"
+                        Header="Date"
                         Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
@@ -77,7 +77,7 @@
                     FontWeight="Bold"
                     FontSize="16"
                     Foreground="#FF484747"
-                    Content="Arraste ou selecione os arquivos"
+                    Content="Select or drop files here."
                     BorderThickness="0"
                     Background="Transparent"
                     Click="BtnSelectFile_Click"/>
