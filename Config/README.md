@@ -1,17 +1,17 @@
-﻿# Configuração de Connection String
+﻿# Connection String Configuration
 
-Esta pasta contém os arquivos de configuração da connection string usados pelo projeto.
+This folder contains the connection string configuration files used by the project.
 
 ## 🧩 `App.config`
 
-- Versionado no repositório..
-- Contém uma connection string fictícia, usada apenas como modelo de referência.
+- Versioned in the repository.
+- Contains a fictitious connection string, used only as a reference model.
 
 ## 🔒 `App.Local.config`
 
-- Não versionado (está no `.gitignore`).
-- Deve conter sua connection string real para acesso ao SQL Server.
-- Para criar:
-  - Faça uma cópia de `App.config`.
-  - Renomeie a cópia para `App.Local.config`.
-  - Edite o valor do atributo `connectionString` com seus dados reais.
+- Not versioned (it is in `.gitignore`).
+- Must contain your real connection string for accessing SQL Server.
+- To create it:
+  - Make a copy of `App.config`.
+  - Rename the copy to `App.Local.config`.
+  - Edit the `connectionString` attribute value with your real data.

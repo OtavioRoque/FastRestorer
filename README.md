@@ -1,15 +1,16 @@
 # Fast Restorer
 
-**Fast Restorer** é uma ferramenta desenvolvida por mim na empresa **Transis Software**.
+**Fast Restorer** Fast Restorer is a tool developed by me at **Transis Software**.
 
-O objetivo é simplificar o processo de restauração de arquivos .bak no SQL Server, realizando automaticamente o replace dos dados caso o banco já exista.
+Its purpose is to simplify the process of restoring `.bak` files in SQL Server, automatically replacing existing data if the database already exists..
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Technologies Used
 - C#.
 - WPF.
 - SQL Server.
 
-## 📁 Pastas
-- **Properties:** Informações do AssemblyInfo.
-- **Config** Definições de connection string.
-- **View:** Janelas da interface gráfica.
+## 📁 Folders
+- **Properties:** AssemblyInfo metadata.
+- **Config** Connection string definitions.
+- **View:** Graphical interface windows.
+- **Helper:** Static utility classes.
