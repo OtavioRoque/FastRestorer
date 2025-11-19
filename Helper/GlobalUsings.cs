@@ -1,0 +1,1 @@
+﻿global using SQL = FastRestorer.Helper.SqlExecutor;
