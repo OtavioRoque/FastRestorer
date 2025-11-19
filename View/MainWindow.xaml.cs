@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using FastRestorer.Helper;
+using System.Windows;
 
 namespace FastRestorer
 {
@@ -18,7 +19,7 @@ namespace FastRestorer
 
         private void BtnSelectFile_Click(object sender, RoutedEventArgs e)
         {
-
+            var files = FileHelper.SelectFiles("Backups (*.zip;*.bak)|*.zip;*.bak");
         }
 
         #endregion
