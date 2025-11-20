@@ -53,9 +53,11 @@ namespace FastRestorer.Helper
         /// <summary>
         /// Executes a command that does not return any data (INSERT, DELETE, RESTORE).
         /// </summary>
+        /// 
         /// <param name="sql">
         /// The non query command to be executed.
         /// </param>
+        /// 
         /// <returns>
         /// 1 if the command was executed successfully, -1 if there was an error.
         /// </returns>
