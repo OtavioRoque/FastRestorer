@@ -17,20 +17,23 @@
             <DataGrid
                 x:Name="dgBackups"
                 Grid.Row="0"
-                IsEnabled="False">
+                ItemsSource="{Binding Backups}">
 
                 <DataGrid.Columns>
                     <DataGridTextColumn
                         Header="Database"
-                        Width="2*"/>
-
-                    <DataGridTextColumn
-                        Header="Size MB"
-                        Width="*"/>
+                        Width="2*"
+                        Binding="{Binding DatabaseName}"/>
 
                     <DataGridTextColumn
                         Header="Date"
-                        Width="*"/>
+                        Width="*"
+                        Binding="{Binding BackupDate}"/>
+                    
+                    <DataGridTextColumn
+                        Header="Size MB"
+                        Width="*"
+                        Binding="{Binding SizeMb}"/>
                 </DataGrid.Columns>
             </DataGrid>
 

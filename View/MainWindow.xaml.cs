@@ -1,10 +1,14 @@
 ﻿using FastRestorer.Helper;
+using FastRestorer.Model;
+using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace FastRestorer
 {
     public partial class MainWindow : Window
     {
+        public ObservableCollection<Backup> Backups { get; } = new();
+
         public MainWindow()
         {
             InitializeComponent();
