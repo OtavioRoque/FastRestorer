@@ -14,3 +14,5 @@ Its purpose is to simplify the process of restoring `.bak` files in SQL Server, 
 - **Config** Connection string definitions.
 - **View:** Graphical interface windows.
 - **Helper:** Static utility classes.
+- **Service:** Classes that handle business logic or external operations.
+- **Model:** Data structures that represent the application’s entities.
