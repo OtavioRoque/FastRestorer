@@ -12,7 +12,7 @@ Its purpose is to simplify the process of restoring `.bak` files in SQL Server, 
 ## 📁 Folders
 - **Properties:** AssemblyInfo metadata.
 - **Config** Connection string definitions.
-- **View:** Graphical interface windows.
-- **Helper:** Static utility classes.
-- **Service:** Classes that handle business logic or external operations.
-- **Model:** Data structures that represent the application’s entities.
+- **Views:** Graphical interface windows.
+- **Helpers:** Static utility classes.
+- **Services:** Classes that handle business logic or external operations.
+- **Models:** Data structures that represent the application’s entities.
