@@ -6,7 +6,7 @@ using Microsoft.Data.SqlClient;
 #pragma warning disable CS8601
 #pragma warning disable CS8603
 
-namespace FastRestorer.Helper
+namespace FastRestorer.Service
 {
     /// <summary>
     /// Contains utility methods to access the database.

@@ -1,1 +1,2 @@
-﻿global using SQL = FastRestorer.Helper.SqlExecutor;
+﻿global using SQL = FastRestorer.Service.SqlExecutor;
+
