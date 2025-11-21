@@ -1,4 +1,4 @@
-﻿namespace FastRestorer.Model
+﻿namespace FastRestorer.Models
 {
     public class Backup
     {

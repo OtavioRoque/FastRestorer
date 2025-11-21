@@ -1,9 +1,9 @@
-﻿using FastRestorer.Helper;
-using FastRestorer.Model;
+﻿using FastRestorer.Helpers;
+using FastRestorer.Models;
 using System.Collections.ObjectModel;
 using System.Windows;
 
-namespace FastRestorer
+namespace FastRestorer.Views
 {
     public partial class MainWindow : Window
     {

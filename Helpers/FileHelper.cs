@@ -1,6 +1,6 @@
 ﻿using Microsoft.Win32;
 
-namespace FastRestorer.Helper
+namespace FastRestorer.Helpers
 {
     public static class FileHelper
     {

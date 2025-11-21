@@ -1,4 +1,4 @@
-﻿namespace FastRestorer.Service
+﻿namespace FastRestorer.Services
 {
     public class Restorer
     {
