@@ -3,7 +3,6 @@ using System.Windows;
 using FastRestorer.Config;
 using Microsoft.Data.SqlClient;
 
-#pragma warning disable CS8601
 #pragma warning disable CS8603
 
 namespace FastRestorer.Services
