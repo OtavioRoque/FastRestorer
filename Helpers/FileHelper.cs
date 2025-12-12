@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using System.IO;
 
 namespace FastRestorer.Helpers
 {
@@ -30,6 +31,25 @@ namespace FastRestorer.Helpers
             bool? result = dialog.ShowDialog();
 
             return result == true ? dialog.FileNames : Array.Empty<string>();
+        }
+
+        /// <summary>
+        /// Determines whether the specified file path refers to an existing file with a .bak extension.
+        /// </summary>
+        /// 
+        /// <param name="path">
+        /// The file system path to check. Can be either an absolute or relative path.
+        /// </param>
+        /// 
+        /// <returns>
+        /// <see langword="true"/> if the file exists and has a .bak extension; otherwise, <see langword="false"/>.
+        /// </returns>
+        public static bool IsBakFile(string path)
+        {
+            if (!File.Exists(path))
+                return false;
+
+            return Path.GetExtension(path).Equals(".bak", StringComparison.OrdinalIgnoreCase);
         }
     }
 }
