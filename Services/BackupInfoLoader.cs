@@ -1,4 +1,6 @@
 ﻿using FastRestorer.Models;
+using System.IO;
+using System.Data;
 
 namespace FastRestorer.Services
 {
@@ -17,7 +19,20 @@ namespace FastRestorer.Services
         /// </returns>
         public Backup Load(string bakPath)
         {
-            return new Backup("SampleDatabase", DateTime.Now, 104857600); // 100 MB
+            if (!File.Exists(bakPath))
+                return null;
+
+            string sql = $@"
+                RESTORE HEADERONLY 
+                FROM DISK = '{bakPath}'";
+
+            var dr = SQL.FillDataTable(sql).Rows[0];
+
+            string databaseName = dr["DatabaseName"].ToString() ?? string.Empty;
+            DateTime backupDate = (DateTime)dr["BackupFinishDate"];
+            long sizeBytes = (long)dr["BackupSize"];
+
+            return new Backup(databaseName, backupDate, sizeBytes);
         }
 
         /// <summary>

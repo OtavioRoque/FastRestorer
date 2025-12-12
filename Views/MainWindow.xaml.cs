@@ -23,8 +23,12 @@ namespace FastRestorer.Views
 
         private void BtnSelectFile_Click(object sender, RoutedEventArgs e)
         {
-            var files = FileHelper.SelectFiles("Backups (*.zip;*.bak)|*.zip;*.bak");
+            var files = FileHelper.SelectFiles("Backups (*.bak)|*.bak");
         }
+
+        #endregion
+
+        #region Private Methods
 
         #endregion
     }
