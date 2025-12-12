@@ -1,12 +1,14 @@
-﻿namespace FastRestorer.Services
+﻿using FastRestorer.Models;
+
+namespace FastRestorer.Services
 {
     public class Restorer
     {
-        private readonly string _backupPath;
+        private readonly Backup _backup;
 
-        public Restorer(string backupPath)
+        public Restorer(Backup backup)
         {
-            _backupPath = backupPath;
+            _backup = backup;
         }
 
         public void Restore()
