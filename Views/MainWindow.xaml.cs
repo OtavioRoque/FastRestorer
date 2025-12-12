@@ -1,5 +1,4 @@
-﻿using FastRestorer.Helpers;
-using FastRestorer.Models;
+﻿using FastRestorer.Models;
 using System.Collections.ObjectModel;
 using System.Windows;
 
@@ -23,7 +22,7 @@ namespace FastRestorer.Views
 
         private void BtnSelectFile_Click(object sender, RoutedEventArgs e)
         {
-            var files = FileHelper.SelectFiles("Backups (*.bak)|*.bak");
+            var files = FH.SelectFiles("Backups (*.bak)|*.bak");
         }
 
         #endregion

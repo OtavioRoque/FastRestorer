@@ -1,5 +1,4 @@
 ﻿using FastRestorer.Models;
-using System.IO;
 
 namespace FastRestorer.Services
 {
@@ -21,7 +20,7 @@ namespace FastRestorer.Services
         /// </returns>
         public Backup? Load(string bakPath)
         {
-            if (!File.Exists(bakPath))
+            if (!FH.IsBakFile(bakPath))
                 return null;
 
             string sql = $@"
