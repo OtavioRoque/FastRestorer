@@ -1,5 +1,8 @@
 ﻿namespace FastRestorer.Helpers
 {
+    /// <summary>
+    /// Provides utility methods for converting objects to common value types such as long and DateTime.
+    /// </summary>
     public static class ParseHelper
     {
         private static bool IsNull(object o) => o == null || o == DBNull.Value;

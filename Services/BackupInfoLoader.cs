@@ -3,6 +3,9 @@ using System.IO;
 
 namespace FastRestorer.Services
 {
+    /// <summary>
+    /// Provides methods for loading backup metadata from one or more SQL Server .bak files.
+    /// </summary>
     public class BackupInfoLoader
     {
         /// <summary>
