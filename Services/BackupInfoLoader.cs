@@ -1,6 +1,5 @@
 ﻿using FastRestorer.Models;
 using System.IO;
-using System.Data;
 
 namespace FastRestorer.Services
 {
@@ -17,7 +16,7 @@ namespace FastRestorer.Services
         /// <returns>
         /// A <see cref="Backup"/> instance containing the backup metadata.
         /// </returns>
-        public Backup Load(string bakPath)
+        public Backup? Load(string bakPath)
         {
             if (!File.Exists(bakPath))
                 return null;
@@ -46,10 +45,15 @@ namespace FastRestorer.Services
         /// <returns>
         /// An enumerable sequence of <see cref="Backup"/> instances.
         /// </returns>
-        public IEnumerable<Backup> LoadMany(IEnumerable<string> bakPaths)
+        public IEnumerable<Backup?> LoadMany(IEnumerable<string> bakPaths)
         {
             foreach (var path in bakPaths)
-                yield return Load(path);
+            {
+                var backup = Load(path);
+
+                if (backup != null)
+                    yield return backup;
+            }
         }
     }
 }
