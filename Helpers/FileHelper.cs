@@ -3,6 +3,9 @@ using System.IO;
 
 namespace FastRestorer.Helpers
 {
+    /// <summary>
+    /// Provides utility methods for common file operations and validations.
+    /// </summary>
     public static class FileHelper
     {
         /// <summary>
