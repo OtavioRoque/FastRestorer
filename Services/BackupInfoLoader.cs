@@ -28,10 +28,10 @@ namespace FastRestorer.Services
             var dr = SQL.FillDataTable(sql).Rows[0];
 
             string databaseName = dr["DatabaseName"].ToString() ?? string.Empty;
-            DateTime backupDate = PH.ToDateTime(dr["BackupFinishDate"]);
-            long sizeBytes = PH.ToLong(dr["BackupSize"]);
+            DateTime backupFinishDate = PH.ToDateTime(dr["BackupFinishDate"]);
+            long backupSize = PH.ToLong(dr["BackupSize"]);
 
-            return new Backup(databaseName, backupDate, sizeBytes);
+            return new Backup(databaseName, backupFinishDate, bakPath, backupSize);
         }
 
         /// <summary>
