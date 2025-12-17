@@ -6,7 +6,7 @@
 
 # Fast Restorer
 
-**Fast Restorer** Fast Restorer is a tool developed by me at **Transis Software**.
+**Fast Restorer** is a tool developed by me at **Transis Software**.
 Its purpose is to simplify the process of restoring `.bak` files in SQL Server, automatically replacing existing data if the database already exists..
 
 ## 📁 Folders
